@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>牛肉麵料理包購物網</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+        }
+        .nav {
+            background: #333;
+            color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 15px;
+        }
+        .nav a:hover {
+            background: #555;
+            border-radius: 5px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 800px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+        }
+        .image-container {
+            flex: 1;
+            min-width: 250px;
+            padding: 10px;
+        }
+        .image-container img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .info-container {
+            flex: 2;
+            min-width: 300px;
+            padding: 10px;
+        }
+        .price {
+            color: red;
+            font-size: 24px;
+            margin: 10px 0;
+        }
+        .actions {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .quantity {
+            width: 50px;
+            padding: 5px;
+            font-size: 16px;
+            text-align: center;
+        }
+        .btn {
+            padding: 10px 15px;
+            font-size: 16px;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .buy-btn {
+            background: #ff5722;
+        }
+        .cart-btn {
+            background: #007bff;
+        }
+        .description {
+            max-width: 800px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+        }
+        .section {
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 10px;
+            background: #f0f0f0;
+        }
+        .section h2 {
+            margin-top: 0;
+            color: #333;
+        }
+        @media (max-width: 600px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .nav {
+                flex-wrap: wrap;
+                text-align: center;
+            }
+            .nav a {
+                display: block;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <a href="#">最近看過</a>
+        <a href="#">購物車</a>
+        <a href="#">我的訂單</a>
+        <a href="#">客戶中心</a>
+        <a href="#">註冊</a>
+        <a href="#">登入</a>
+    </nav>
+    <div class="container">
+        <div class="image-container">
+            <img src="suiBeefNoodleSoup.jpg" alt="牛肉麵料理包">
+        </div>
+        <div class="info-container">
+            <h1>牛肉麵料理包</h1>
+            <p class="price">NT$ 199</p>
+            <p>美味道地的牛肉麵料理包，簡單加熱即可享受！</p>
+            <div class="actions">
+                <input type="number" class="quantity" value="1" min="1">
+                <button class="btn buy-btn">立即購買</button>
+                <button class="btn cart-btn">放入購物車</button>
+            </div>
+        </div>
+    </div>
+    <div class="description">
+        <div class="section">
+            <h2>產品資訊</h2>
+            <p><strong>品名：</strong>舒姨食堂牛腱牛肉麵</p>
+            <p><strong>內容物名稱：</strong>舒姨食堂牛腱牛肉麵湯包</p>
+            <p><strong>每單一包內容量：</strong>600 公克</p>
+            <p><strong>每單一包固形量：</strong>80 公克</p>
+            <p><strong>主原料：</strong>好市多的牛腱6條1000元左右，大約可以煮10-12人份的牛肉麵。</p>
+            <p><strong>其他成分：</strong>紅蘿蔔、杏鮑菇、洋蔥、番茄、蔬菜、麵條、滷包</p>
+            <p><strong>麵條：</strong>150 公克/1 包入</p>
+            <p><strong>總重量：</strong>150 公克</p>
+            <p><strong>成分：</strong>麵粉、黏質玉米澱粉、小麥蛋白、鹽、食用酒精、洋菜粉、山藥粉</p>
+            <p><strong>食品添加物：</strong>蘋果酸鈉、乳酸鈉</p>
+            <p><strong>內容量：</strong>600公克(520g湯+固形量80g)/麵條150公克</p>
+            <p><strong>牛可食部位之原料原產地：</strong>台灣</p>
+            <p><strong>原產地：</strong>台灣</p>
+            <p><strong>保存期限：</strong>365日</p>
+        </div>
+        <div class="section">
+            <h2>廠商資訊</h2>
+            <p><strong>廠商名稱：</strong>舒姨食堂</p>
+            <p><strong>廠商電話：</strong>02-1234567</p>
+            <p><strong>投保產品責任險字號：</strong>-</p>
+            <p><strong>食品業者登錄字號：</strong>-</p>
+        </div>
+    </div>
+</body>
+</html>
