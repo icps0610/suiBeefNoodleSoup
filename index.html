@@ -100,10 +100,28 @@
             align-items: center;
         }
 
-        .product-info strong {
-            width: 250px; /* 固定寬度，讓標題對齊 */
-            flex-shrink: 0;
+        .product-info p {
+            display: flex;
+            flex-wrap: wrap; /* 在小螢幕時允許換行 */
+            align-items: center;
         }
+
+        .product-info strong {
+            min-width: 120px; /* 設定最小寬度，避免小螢幕變形 */
+            flex-shrink: 0; /* 不讓 strong 壓縮 */
+        }
+
+        @media (max-width: 576px) { /* 手機版 */
+            .product-info p {
+                flex-direction: column; /* 小螢幕時上下排列 */
+                align-items: flex-start;
+            }
+
+            .product-info strong {
+                min-width: auto; /* 取消寬度限制，適應內容 */
+            }
+        }
+
 
     </style>
 </head>
